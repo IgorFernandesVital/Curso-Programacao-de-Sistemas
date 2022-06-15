@@ -1,0 +1,21 @@
+<body>
+    <h1>
+        Usando um loop 'for', mostre na tela os primeiros dez números inteiros pares.
+        Dica: faça uma pesquisa sobre o operador módulo (%) e use-o para checar se um número é par. Por exemplo:
+    </h1>
+    <h2>
+        console.log(4 % 2 === 0)  //retorna true
+        console.log(5 % 2 === 0) //retorna false
+    </h2>    
+    <script>
+        let par = 0;
+
+        for(let i = 0; i <= 20; i++){
+            ++par; 
+
+            if(par % 2 === 0){
+                console.log(par);
+            }
+        }
+    </script>
+</body>
