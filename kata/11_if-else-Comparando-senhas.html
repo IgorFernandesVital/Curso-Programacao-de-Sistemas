@@ -1,0 +1,13 @@
+<body>
+    <h1>Escreva um programa onde uma variável chamada "senha" tem o valor "12345". O programa deve permitir que o usuário digite uma senha e então comparar o que foi digitado com o valor armazenado na variável.  Se forem iguais, mostrar na tela "seja bem vindo". Caso contrário,  "acesso negado".</h1>
+    <script>
+        let senha = 12345;
+        let senhaUsuario = Number(prompt("Digite uma senha"));
+
+        if(senhaUsuario === senha){
+            console.log("Seja bem vindo(a)");
+        } else{
+            console.log("Acesso negado");
+        }
+    </script>
+</body>
