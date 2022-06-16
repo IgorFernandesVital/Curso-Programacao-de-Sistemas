@@ -1,0 +1,25 @@
+<body>
+    <h1>
+        Crie um objeto chamado 'quarto', que representa um quarto de hotel. Ele deve ter as propriedades:
+        acomodacoes (number) indicando para quantas pessoas é o quarto
+        disponível (boolean) indicando se está disponível ou não
+        E deve ter o seguinte método:
+        atualizar disponibilidade - deve trocar this.disponivel para false se estiver true e vice-versa.
+    </h1>
+    <script>
+         let quarto = {
+            acomodacoes : 5,
+            disponivel: false,
+            disponibilidade: function(){
+                if(this.disponivel == false){
+                     let disp = this.disponivel = true;
+                    return disp
+                } else{
+                    let disp = this.disponivel = false;
+                    return disp
+                }
+            }
+        }
+        console.log(quarto.disponibilidade())
+    </script>
+</body>
