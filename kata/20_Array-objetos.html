@@ -1,0 +1,24 @@
+<body>
+    <h1>
+        Crie um array com três objetos 'pessoa', que terá as propriedades 'nome' e 'idade'.
+        Use um loop for para mostrar os três objetos na tela.
+        Altere o código para mostrar apenas as pessoas maiores de idade.
+    </h1>
+    <script>
+        let pessoas = [
+            {nome: "igor",idade: 23 },
+            {nome: "marrecko",idade: 35 },
+            {nome: "guilherme",idade: 16 },
+        ]
+        /*  monstrando os três objetos na tela
+        for(let i = 0; i < pessoas.length; i++){
+            console.log(pessoas[i])
+        } 
+        */
+        for(let i = 0; i < pessoas.length; i++){
+            if(pessoas[i].idade > 18){
+                console.log(pessoas[i]);
+            }
+        }
+    </script>
+</body>
