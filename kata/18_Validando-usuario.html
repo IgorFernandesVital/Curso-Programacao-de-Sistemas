@@ -1,0 +1,24 @@
+<body>
+    <h1>Digamos que recebemos, via prompt, um nome digitado pelo usuário. Queremos mostrar na tela “Este nome não consta em nossos registros” caso o nome digitado não esteja no vetor. E “Este nome consta em nossos registros” caso contrário.</h1>
+    
+    <script>
+        let usuarios = ["JOSÉ", "IGOR", "SILVIA", "CLAUDIA"];
+
+        let nomeUsuario = prompt("Digite seu usuario");
+
+        let encontrou = false;
+
+        for(let i = 0; i < usuarios.length; i++){
+
+            if(usuarios[i] === nomeUsuario.toUpperCase()){
+                encontrou = true;
+            }
+        }
+
+        if(encontrou === true){
+            console.log("Nome: " + nomeUsuario + ". Este nome consta em nossos registros");
+        } else{
+            console.log("Nome: " + nomeUsuario + ". Este nome não consta em nossos registros");
+        }
+    </script>
+</body>
